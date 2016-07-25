@@ -7,11 +7,11 @@ router.get('/', function (req, res, next) {
 
     function WebSocketTest() {
         var WebSocket = require('ws');
-        var ws = new WebSocket("wss://ws-feed.exchange.coinbase.com");
+        var ws = new WebSocket("wshere");
 
         var req = {
             "type": "subscribe",
-            "product_id": "BTC-USD"
+            "product_id": ""
         }
 
         ws.onopen = function () {
